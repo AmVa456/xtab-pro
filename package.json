@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "xtab-pro is a powerful and intuitive dashboard designed to streamline web development workflows on ChromeOS. It provides quick access to essential tools and information, helping developers stay organized and productive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmVa456/xtab-pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmVa456/xtab-pro/issues"
+  },
+  "homepage": "https://github.com/AmVa456/xtab-pro#readme",
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  }
+}
