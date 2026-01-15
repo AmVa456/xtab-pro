@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="xtab-pro - A powerful Discord bot for web development dashboard workflows on ChromeOS">
+    <title>xtab-pro | Discord Bot Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="bot-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h1>xtab-pro</h1>
+                <p class="tagline">A powerful Discord bot for web development dashboard workflows on ChromeOS</p>
+                <div class="hero-buttons">
+                    <a href="#setup" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/AmVa456/xtab-pro" class="btn btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Simple Commands</h3>
+                    <p>Easy-to-use command system for quick interaction and workflow management</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Quick Setup</h3>
+                    <p>Fast deployment with minimal configuration required</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>ChromeOS Optimized</h3>
+                    <p>Designed specifically for web development workflows on ChromeOS</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Developer Friendly</h3>
+                    <p>Built with modern tools and best practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2>Tech Stack</h2>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <h3>Discord.js v14</h3>
+                    <p>Powerful JavaScript library for interacting with the Discord API</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Node.js</h3>
+                    <p>JavaScript runtime built on Chrome's V8 engine (v16.6.0 or newer recommended)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Guide Section -->
+    <section id="setup" class="setup">
+        <div class="container">
+            <h2>Setup Guide</h2>
+            <div class="setup-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create Discord Application</h3>
+                        <ol>
+                            <li>Go to the <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a></li>
+                            <li>Click "New Application" and give it a name</li>
+                            <li>Navigate to the "Bot" section in the left sidebar</li>
+                            <li>Click "Add Bot" and confirm</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Get Your Bot Token</h3>
+                        <ol>
+                            <li>In the Bot section, click "Reset Token"</li>
+                            <li>Copy the token immediately (you won't be able to see it again!)</li>
+                            <li><strong>Keep this token secure!</strong> Never share it publicly</li>
+                        </ol>
+                        <div class="warning">
+                            ⚠️ <strong>Security Warning:</strong> Never commit your bot token to version control or share it publicly!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Configure Bot Permissions</h3>
+                        <p>Enable the following in the Bot section:</p>
+                        <ul>
+                            <li><strong>Privileged Gateway Intents:</strong>
+                                <ul>
+                                    <li>Server Members Intent (optional)</li>
+                                    <li>Message Content Intent (required for message commands)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Invite Bot to Your Server</h3>
+                        <ol>
+                            <li>Navigate to the "OAuth2" → "URL Generator" section</li>
+                            <li>Select the following scopes:
+                                <ul>
+                                    <li><code>bot</code></li>
+                                </ul>
+                            </li>
+                            <li>Select the following bot permissions:
+                                <ul>
+                                    <li><code>Send Messages</code></li>
+                                    <li><code>Read Messages/View Channels</code></li>
+                                    <li><code>Read Message History</code></li>
+                                </ul>
+                            </li>
+                            <li>Copy the generated URL and open it in your browser</li>
+                            <li>Select the server and authorize the bot</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Install and Run</h3>
+                        <div class="code-block">
+                            <pre><code># Clone the repository
+git clone https://github.com/AmVa456/xtab-pro.git
+cd xtab-pro
+
+# Install dependencies
+npm install
+
+# Configure your bot token in bot.js
+# Replace 'YOUR_BOT_TOKEN' with your actual token
+
+# Run the bot
+node bot.js</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosting Options Section -->
+    <section id="hosting" class="hosting">
+        <div class="container">
+            <h2>Hosting Options</h2>
+            <p class="section-intro">Deploy your bot to keep it running 24/7</p>
+            <div class="hosting-grid">
+                <div class="hosting-card">
+                    <h3>Railway</h3>
+                    <p>Easy deployment with free tier available. Great for beginners.</p>
+                    <ul>
+                        <li>✅ Simple Git-based deployment</li>
+                        <li>✅ Free $5 monthly credit</li>
+                        <li>✅ Automatic deployments</li>
+                    </ul>
+                    <a href="https://railway.app" class="btn-link" target="_blank">Learn More →</a>
+                </div>
+                
+                <div class="hosting-card">
+                    <h3>Render</h3>
+                    <p>Modern cloud platform with free tier for hobby projects.</p>
+                    <ul>
+                        <li>✅ Free tier available</li>
+                        <li>✅ Auto-scaling</li>
+                        <li>✅ Easy configuration</li>
+                    </ul>
+                    <a href="https://render.com" class="btn-link" target="_blank">Learn More →</a>
+                </div>
+                
+                <div class="hosting-card">
+                    <h3>Heroku</h3>
+                    <p>Popular platform with extensive documentation and addons.</p>
+                    <ul>
+                        <li>✅ Well-documented</li>
+                        <li>✅ Many addons available</li>
+                        <li>⚠️ Free tier discontinued</li>
+                    </ul>
+                    <a href="https://www.heroku.com" class="btn-link" target="_blank">Learn More →</a>
+                </div>
+                
+                <div class="hosting-card">
+                    <h3>DigitalOcean</h3>
+                    <p>Flexible VPS hosting with more control and customization.</p>
+                    <ul>
+                        <li>✅ Full server control</li>
+                        <li>✅ Scalable resources</li>
+                        <li>💰 Starting at $4/month</li>
+                    </ul>
+                    <a href="https://www.digitalocean.com" class="btn-link" target="_blank">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2>Available Commands</h2>
+            <div class="command-list">
+                <div class="command-item">
+                    <div class="command-header">
+                        <code>!ping</code>
+                        <span class="badge">Basic</span>
+                    </div>
+                    <p>Test if the bot is responsive</p>
+                    <div class="command-example">
+                        <strong>Example:</strong>
+                        <div class="code-block">
+                            <pre><code>User: !ping
+Bot: Pong.</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p><strong>Note:</strong> This bot is currently in early development. More commands will be added in future updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section id="configuration" class="configuration">
+        <div class="container">
+            <h2>Configuration</h2>
+            <div class="config-content">
+                <h3>Environment Variables</h3>
+                <p>For production deployments, use environment variables instead of hardcoding tokens:</p>
+                <div class="code-block">
+                    <pre><code># Create a .env file (add it to .gitignore!)
+DISCORD_TOKEN=your_bot_token_here
+
+# Update your bot.js to use it:
+require('dotenv').config();
+client.login(process.env.DISCORD_TOKEN);</code></pre>
+                </div>
+                
+                <h3>Required Dependencies</h3>
+                <div class="code-block">
+                    <pre><code>{
+  "dependencies": {
+    "discord.js": "^14.19.3"
+  }
+}</code></pre>
+                </div>
+                
+                <h3>Security Best Practices</h3>
+                <ul>
+                    <li>✅ Never commit your bot token to version control</li>
+                    <li>✅ Use environment variables for sensitive data</li>
+                    <li>✅ Add <code>.env</code> to your <code>.gitignore</code> file</li>
+                    <li>✅ Regenerate tokens if they're accidentally exposed</li>
+                    <li>✅ Use minimal required permissions for your bot</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>xtab-pro</h4>
+                    <p>Discord bot for web development workflows</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/AmVa456/xtab-pro" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://discord.js.org" target="_blank">Discord.js Documentation</a></li>
+                        <li><a href="https://discord.com/developers/docs" target="_blank">Discord API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://github.com/AmVa456/xtab-pro/issues" target="_blank">Report Issues</a></li>
+                        <li><a href="https://github.com/AmVa456/xtab-pro/blob/main/BOT_SETUP.md" target="_blank">Setup Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 xtab-pro. Open source project under ISC License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
