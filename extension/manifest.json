@@ -18,10 +18,10 @@
     "type": "module"
   },
   "permissions": [],
-  "host_permissions": [],
+  "host_permissions": ["<all_urls>"],
   "offline_enabled": true,
   "minimum_chrome_version": "116",
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; object-src 'self'"
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; object-src 'self'; connect-src 'self' https:"
   }
 }
