@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "xTab Pro",
+  "short_name": "xTab Pro",
+  "description": "A lightweight browser-native IDE powered by Monaco and the File System Access API.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["developer", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/xtab-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "text/*": [".js", ".jsx", ".ts", ".tsx", ".json", ".html", ".css", ".md", ".txt", ".yml", ".yaml"]
+      }
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
