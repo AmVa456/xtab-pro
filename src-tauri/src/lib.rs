@@ -1,16 +1,1 @@
-#[cfg_attr(mobile, tauri::mobile_entry_point)]
-pub fn run() {
-  tauri::Builder::default()
-    .setup(|app| {
-      if cfg!(debug_assertions) {
-        app.handle().plugin(
-          tauri_plugin_log::Builder::default()
-            .level(log::LevelFilter::Info)
-            .build(),
-        )?;
-      }
-      Ok(())
-    })
-    .run(tauri::generate_context!())
-    .expect("error while running tauri application");
-}
+mod commands;\n\nuse tauri::Manager;\n\n#[cfg_attr(mobile, tauri::mobile_entry_point)]\npub fn run() {\n  tauri::Builder::default()\n    .setup(|app| {\n      if cfg!(debug_assertions) {\n        app.handle().plugin(\n          tauri_plugin_log::Builder::default()\n            .level(log::LevelFilter::Info)\n            .build(),\n        )?;\n      }\n      Ok(())\n    })\n    .invoke_handler(tauri::generate_handler![\n      commands::get_cwd,\n      commands::read_file,\n      commands::write_file,\n      commands::list_dir\n    ])\n    .run(tauri::generate_context!())\n    .expect(\"error while running tauri application\");\n}\n
