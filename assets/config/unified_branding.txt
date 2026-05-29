@@ -1,0 +1,29 @@
+UNIFIED BRANDING DOCUMENT
+
+LUV MEDIA GROUP
+POSITIONING:
+  who: Adult content creators, entertainers, media brands
+  what: A creator-first entertainment and media company that amplifies adult creators through storytelling, distribution, and audience development
+  value: Creative freedom with professional structure
+  statement: Luv Media Group empowers adult creators to own their voice, grow their audiences, and distribute content without compromise.
+TONE:
+  attributes: ['confident', 'expressive', 'warm', 'creator-forward', 'modern']
+  dos: ['Speak directly to creators', 'Celebrate individuality and ownership', 'Use inviting and affirming language']
+  donts: ['Avoid corporate jargon', 'Avoid legal or technical heavy language', 'Avoid condescension']
+VISUALS:
+  palette: {'light_blue': '#A9D6F2', 'pink': '#F5B9C8', 'warm_white': '#F6F3EE', 'dark_ui': '#111827'}
+  logo: LUV Media approved monogram and wordmark only
+
+IRI PRODUCTIONS
+POSITIONING:
+  who: Businesses, creators, and teams needing reliable digital execution
+  what: A production and development studio delivering websites, apps, and systems with precision
+  value: Reliable execution without noise
+  statement: IRI Productions builds and delivers digital products with clarity, stability, and technical confidence.
+TONE:
+  attributes: ['calm', 'technical', 'assured', 'outcome-driven']
+  dos: ['Use clear and precise language', 'Focus on outcomes and reliability', 'Maintain a professional tone']
+  donts: ['Avoid hype', 'Avoid slang', 'Avoid emotional exaggeration']
+VISUALS:
+  palette: Neutral / technical palette separate from Luv Media
+  logo: IRI Productions standalone mark

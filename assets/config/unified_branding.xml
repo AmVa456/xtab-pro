@@ -1,0 +1,36 @@
+<branding organization="IRI National">
+  <brand name="Luv Media Group">
+    <positioning>
+      <who>Adult content creators, entertainers, media brands</who>
+      <what>A creator-first entertainment and media company that amplifies adult creators through storytelling, distribution, and audience development</what>
+      <value>Creative freedom with professional structure</value>
+      <statement>Luv Media Group empowers adult creators to own their voice, grow their audiences, and distribute content without compromise.</statement>
+    </positioning>
+    <tone>
+      <attributes>['confident', 'expressive', 'warm', 'creator-forward', 'modern']</attributes>
+      <dos>['Speak directly to creators', 'Celebrate individuality and ownership', 'Use inviting and affirming language']</dos>
+      <donts>['Avoid corporate jargon', 'Avoid legal or technical heavy language', 'Avoid condescension']</donts>
+    </tone>
+    <visuals>
+      <palette>{'light_blue': '#A9D6F2', 'pink': '#F5B9C8', 'warm_white': '#F6F3EE', 'dark_ui': '#111827'}</palette>
+      <logo>LUV Media approved monogram and wordmark only</logo>
+    </visuals>
+  </brand>
+  <brand name="IRI Productions">
+    <positioning>
+      <who>Businesses, creators, and teams needing reliable digital execution</who>
+      <what>A production and development studio delivering websites, apps, and systems with precision</what>
+      <value>Reliable execution without noise</value>
+      <statement>IRI Productions builds and delivers digital products with clarity, stability, and technical confidence.</statement>
+    </positioning>
+    <tone>
+      <attributes>['calm', 'technical', 'assured', 'outcome-driven']</attributes>
+      <dos>['Use clear and precise language', 'Focus on outcomes and reliability', 'Maintain a professional tone']</dos>
+      <donts>['Avoid hype', 'Avoid slang', 'Avoid emotional exaggeration']</donts>
+    </tone>
+    <visuals>
+      <palette>Neutral / technical palette separate from Luv Media</palette>
+      <logo>IRI Productions standalone mark</logo>
+    </visuals>
+  </brand>
+</branding>

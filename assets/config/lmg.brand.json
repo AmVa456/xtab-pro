@@ -1,0 +1,45 @@
+{
+  "root_version": "1.0.0",
+
+  "organization": {
+    "legal_name": "IRI National",
+    "type": "parent_company",
+    "branding_policy": {
+      "show_in_sub_brand_logos": false,
+      "legal_reference_only": true
+    }
+  },
+
+  "brands": [
+    {
+      "id": "iri-national",
+      "name": "IRI National",
+      "role": "root_brand",
+      "brand_type": "corporate",
+      "public_facing": false
+    },
+    {
+      "id": "luv-media-group",
+      "name": "Luv Media Group",
+      "brand_type": "sub_brand",
+      "operates_as": "IRI National d/b/a Luv Media Group",
+      "public_facing": true,
+      "uses_animation_spec": "animation.spec.json",
+      "brand_schema": "brand.schema.json",
+      "domains": [
+        "media",
+        "content",
+        "creative"
+      ]
+    }
+  ],
+
+  "rules": {
+    "logos": {
+      "sub_brand_may_reference_parent": false
+    },
+    "legal_copy": {
+      "required_format": "IRI National d/b/a {brand_name}"
+    }
+  }
+}

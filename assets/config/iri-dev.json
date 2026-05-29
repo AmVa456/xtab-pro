@@ -1,0 +1,577 @@
+{
+  "owner": {
+    "id": "owner_dani",
+    "name": "Dani",
+    "legal_name": "Dani Harper",
+    "location": "Bowling Green, KY, USA",
+    "roles": [
+      "Founder",
+      "Backend & Systems Developer",
+      "Web Developer",
+      "Content Creator"
+    ],
+    "ecosystem": "xSeries + DaniOS + IRI National",
+    "notes": "Primary architect of the technical and brand ecosystem."
+  },
+  "brands": {
+    "iri_national": {
+      "id": "brand_iri_national",
+      "name": "IRI National",
+      "type": "parent_company",
+      "description": "Parent company and umbrella entity for technical production and creator-facing media brands.",
+      "positioning": {
+        "tagline": "Infrastructure for creators and systems.",
+        "mission": "Provide a unified backbone for media, technology, and creator ecosystems.",
+        "audience": [
+          "Creators",
+          "Small businesses",
+          "Technical teams",
+          "Media partners"
+        ]
+      },
+      "relationships": {
+        "children": [
+          "brand_iri_productions",
+          "brand_luv_media_group"
+        ],
+        "dbas": [
+          "IRI Productions",
+          "Luv Media Group"
+        ]
+      },
+      "brand_kit": {
+        "colors": {
+          "primary": {
+            "name": "Royal Purple",
+            "hex": "#4B2E83"
+          },
+          "secondary": {
+            "name": "Midnight Blue",
+            "hex": "#0B1020"
+          },
+          "accent": {
+            "name": "Crimson Red",
+            "hex": "#C1272D"
+          },
+          "neutral_dark": {
+            "name": "Pitch Black",
+            "hex": "#000000"
+          },
+          "support": {
+            "name": "Forest Green",
+            "hex": "#1C4D32"
+          }
+        },
+        "typography": {
+          "primary_font": "Inter",
+          "secondary_font": "JetBrains Mono",
+          "usage": {
+            "headings": "Inter",
+            "body": "Inter",
+            "code": "JetBrains Mono"
+          }
+        },
+        "imagery": {
+          "animals": [
+            "panther",
+            "lion",
+            "tiger"
+          ],
+          "motifs": [
+            "sharp lines",
+            "high contrast",
+            "noisy gradients",
+            "glow accents",
+            "geometric 3-point crown"
+          ],
+          "mood": [
+            "confident",
+            "technical",
+            "decisive",
+            "protective"
+          ]
+        },
+        "voice": {
+          "tone": "direct, technical, grounded, slightly bold",
+          "keywords": [
+            "infrastructure",
+            "modular",
+            "deterministic",
+            "orchestration",
+            "ecosystem"
+          ]
+        },
+        "logo_assets": [],
+        "icon_sets": []
+      },
+      "domains": {
+        "primary": [],
+        "internal": [],
+        "notes": "IRI National acts as the legal and structural parent; domains may be shared or delegated to sub-brands."
+      },
+      "products": [],
+      "services": [],
+      "structure": {
+        "departments": [
+          "Technical",
+          "Brand & Creative",
+          "Operations",
+          "Partnerships"
+        ],
+        "notes": "IRI National is more of a holding and coordination entity than a consumer-facing brand."
+      },
+      "tasks": [],
+      "files": [],
+      "chats": []
+    },
+    "iri_productions": {
+      "id": "brand_iri_productions",
+      "name": "IRI Productions",
+      "type": "technical_brand",
+      "parent": "brand_iri_national",
+      "description": "Technical production, backend systems, infrastructure, and distribution brand under IRI National.",
+      "positioning": {
+        "tagline": "Systems that don’t flinch.",
+        "mission": "Design and operate modular, resilient, and deterministic systems for media and creators.",
+        "audience": [
+          "Developers",
+          "Technical founders",
+          "Media platforms",
+          "Infrastructure clients"
+        ]
+      },
+      "brand_kit": {
+        "colors": {
+          "primary": {
+            "name": "Deep Indigo",
+            "hex": "#1A1B3A"
+          },
+          "secondary": {
+            "name": "Electric Cyan",
+            "hex": "#00E5FF"
+          },
+          "accent": {
+            "name": "Signal Orange",
+            "hex": "#FF7A1A"
+          },
+          "neutral": {
+            "name": "Slate",
+            "hex": "#2B2F3A"
+          }
+        },
+        "typography": {
+          "primary_font": "Inter",
+          "secondary_font": "JetBrains Mono",
+          "usage": {
+            "dashboards": "Inter",
+            "code_views": "JetBrains Mono"
+          }
+        },
+        "imagery": {
+          "motifs": [
+            "grids",
+            "nodes and edges",
+            "terminal-inspired UI",
+            "system diagrams",
+            "engineered 6-point crown"
+          ],
+          "mood": [
+            "precise",
+            "engineered",
+            "reliable"
+          ]
+        },
+        "voice": {
+          "tone": "technical, concise, confident",
+          "keywords": [
+            "orchestrator",
+            "workers",
+            "jobs",
+            "multi-instance",
+            "observability"
+          ]
+        },
+        "logo_assets": [],
+        "icon_sets": []
+      },
+      "domains": {
+        "primary": [],
+        "internal": [],
+        "notes": "Used for technical properties, dashboards, and infrastructure-facing properties."
+      },
+      "products": [
+        {
+          "id": "prod_xseries",
+          "name": "xSeries",
+          "type": "ecosystem",
+          "description": "Modular ecosystem including orchestrators, dashboards, and supporting services.",
+          "status": "in_development",
+          "stack": [
+            "TypeScript",
+            "Node.js",
+            "PostgreSQL",
+            "Redis",
+            "Docker"
+          ],
+          "links": {},
+          "notes": "xSeries is both a product line and an internal backbone."
+        },
+        {
+          "id": "prod_danios",
+          "name": "DaniOS",
+          "type": "runtime",
+          "description": "OS-like runtime and modular environment for orchestrating services and workers.",
+          "status": "in_development",
+          "stack": [
+            "Node.js",
+            "TypeScript",
+            "Process orchestration",
+            "IPC"
+          ],
+          "notes": "Acts as a substrate for orchestrators and workers."
+        }
+      ],
+      "services": [
+        {
+          "id": "svc_telegram_orchestrator",
+          "name": "Telegram Bot API Orchestrator",
+          "description": "Multi-instance Telegram Bot API orchestration system integrated into xSeries and DaniOS.",
+          "status": "in_design",
+          "goals": [
+            "Multi-instance support",
+            "Per-bot isolation",
+            "Centralized logging and metrics",
+            "Configurable routing and sharding"
+          ]
+        }
+      ],
+      "structure": {
+        "modules": [
+          "orchestrators",
+          "workers",
+          "jobs",
+          "dashboards",
+          "pipelines"
+        ],
+        "notes": "IRI Productions is the technical execution arm of the ecosystem."
+      },
+      "tasks": [],
+      "files": [],
+      "chats": []
+    },
+    "luv_media_group": {
+      "id": "brand_luv_media_group",
+      "name": "Luv Media Group",
+      "type": "creator_brand",
+      "parent": "brand_iri_national",
+      "description": "Creator-facing media brand focused on content, experiences, and audience connection.",
+      "positioning": {
+        "tagline": "Media with a heartbeat.",
+        "mission": "Build emotionally resonant, creator-centered media experiences powered by solid infrastructure.",
+        "audience": [
+          "Creators",
+          "Fans",
+          "Communities",
+          "Collaborators"
+        ]
+      },
+      "brand_kit": {
+        "colors": {
+          "primary": {
+            "name": "Soft Magenta",
+            "hex": "#FF4F9A"
+          },
+          "secondary": {
+            "name": "Warm Violet",
+            "hex": "#A24FFF"
+          },
+          "accent": {
+            "name": "Sunrise Gold",
+            "hex": "#FFC857"
+          },
+          "neutral": {
+            "name": "Charcoal",
+            "hex": "#222222"
+          }
+        },
+        "typography": {
+          "primary_font": "Inter",
+          "secondary_font": "Rounded Sans",
+          "usage": {
+            "social_graphics": "Rounded Sans",
+            "longform": "Inter"
+          }
+        },
+        "imagery": {
+          "motifs": [
+            "soft gradients",
+            "light flares",
+            "subtle grain",
+            "human silhouettes",
+            "layered 'LM' heart-line with flowing 6-point crown"
+          ],
+          "mood": [
+            "warm",
+            "intimate",
+            "supportive",
+            "playful"
+          ]
+        },
+        "voice": {
+          "tone": "empathetic, honest, slightly playful, grounded",
+          "keywords": [
+            "connection",
+            "story",
+            "support",
+            "authenticity"
+          ]
+        },
+        "logo_assets": [],
+        "icon_sets": []
+      },
+      "domains": {
+        "primary": [],
+        "internal": [],
+        "notes": "Public-facing media and creator brand; may share infrastructure with IRI Productions."
+      },
+      "products": [],
+      "services": [],
+      "structure": {
+        "divisions": [
+          "Content",
+          "Community",
+          "Partnerships",
+          "Experiments"
+        ],
+        "notes": "Luv Media Group is the emotional and narrative layer of the ecosystem."
+      },
+      "tasks": [],
+      "files": [],
+      "chats": []
+    }
+  },
+  "domains": {
+    "xseries_online": {
+      "root": "xseries.online",
+      "wildcard": "*.xseries.online",
+      "subdomains": {
+        "www": "www.xseries.online"
+      },
+      "usage": "Production-facing domain for xSeries ecosystem."
+    },
+    "xseries_site": {
+      "root": "xseries.site",
+      "wildcard": "*.xseries.site",
+      "subdomains": {
+        "dev": "dev.xseries.site",
+        "api": "api.xseries.site",
+        "web": "web.xseries.site",
+        "webhook": "webhook.xseries.site",
+        "local": "local.xseries.site",
+        "internal": "internal.xseries.site",
+        "www": "www.xseries.site",
+        "bot": "bot.xseries.site",
+        "auth": "auth.xseries.site",
+        "studio": "studio.xseries.site"
+      },
+      "usage": "Development, staging, and internal infrastructure domain for xSeries."
+    }
+  },
+  "ecosystem": {
+    "xseries": {
+      "id": "eco_xseries",
+      "name": "xSeries",
+      "description": "Modular ecosystem for orchestrating services, bots, and infrastructure components.",
+      "components": [
+        "orchestrators",
+        "workers",
+        "jobs",
+        "dashboards",
+        "pipelines",
+        "integrations"
+      ],
+      "integration_points": [
+        "Telegram Bot API",
+        "Internal APIs",
+        "Monitoring/metrics",
+        "Logging"
+      ],
+      "repos": [],
+      "infrastructure": [],
+      "schemas_used": [
+        "schema_brand_kit",
+        "schema_task",
+        "schema_project",
+        "schema_service"
+      ],
+      "notes": "xSeries is both a product and an internal backbone for IRI Productions and Luv Media Group."
+    },
+    "danios": {
+      "id": "eco_danios",
+      "name": "DaniOS",
+      "description": "Modular OS-like runtime for orchestrating processes, services, and workers.",
+      "features": [
+        "Module loading",
+        "Process orchestration",
+        "Configuration management",
+        "Logging and metrics hooks"
+      ],
+      "integration_points": [
+        "xSeries orchestrators",
+        "Brand-specific services",
+        "CLI tools"
+      ],
+      "repos": [],
+      "notes": "DaniOS acts as the substrate for orchestrators and system-level components."
+    }
+  },
+  "projects": {
+    "proj_telegram_orchestrator": {
+      "id": "proj_telegram_orchestrator",
+      "name": "Telegram Bot API Orchestrator",
+      "brand": "brand_iri_productions",
+      "ecosystem": "eco_xseries",
+      "description": "Multi-instance orchestrator for Telegram bots, integrated with xSeries and DaniOS.",
+      "status": "in_design",
+      "goals": [
+        "Support multiple bot instances with isolation",
+        "Central configuration and secrets management",
+        "Per-bot metrics and logging",
+        "Graceful restarts and rolling updates"
+      ],
+      "stack": [
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "PowerShell",
+        "Python"
+      ],
+      "dependencies": [],
+      "tasks": [],
+      "files": [],
+      "notes": "Core infrastructure project for bot-based automation and integrations."
+    }
+  },
+  "schemas": {
+    "schema_brand_kit": {
+      "id": "schema_brand_kit",
+      "name": "Brand Kit Schema",
+      "description": "Standard structure for defining brand visual and verbal identity.",
+      "fields": {
+        "colors": "object",
+        "typography": "object",
+        "imagery": "object",
+        "voice": "object",
+        "logo_assets": "array",
+        "icon_sets": "array"
+      }
+    },
+    "schema_task": {
+      "id": "schema_task",
+      "name": "Task Schema",
+      "description": "Standard structure for tasks across brands and projects.",
+      "fields": {
+        "id": "string",
+        "title": "string",
+        "description": "string",
+        "status": "enum(todo|in_progress|blocked|done)",
+        "priority": "enum(low|medium|high|critical)",
+        "brand": "string|null",
+        "project": "string|null",
+        "tags": "array",
+        "created_at": "datetime",
+        "updated_at": "datetime"
+      }
+    },
+    "schema_project": {
+      "id": "schema_project",
+      "name": "Project Schema",
+      "description": "Standard structure for projects across the ecosystem.",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "brand": "string|null",
+        "ecosystem": "string|null",
+        "description": "string",
+        "status": "string",
+        "stack": "array",
+        "dependencies": "array",
+        "tasks": "array",
+        "files": "array"
+      }
+    },
+    "schema_service": {
+      "id": "schema_service",
+      "name": "Service Schema",
+      "description": "Standard structure for services (orchestrators, workers, APIs).",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "description": "string",
+        "status": "string",
+        "stack": "array",
+        "integration_points": "array",
+        "config": "object"
+      }
+    },
+    "schema_file": {
+      "id": "schema_file",
+      "name": "File Schema",
+      "description": "Standard structure for tracking files across brands and projects.",
+      "fields": {
+        "id": "string",
+        "label": "string",
+        "path": "string",
+        "type": "string",
+        "tags": "array",
+        "brand": "string|null",
+        "project": "string|null",
+        "last_modified": "datetime"
+      }
+    },
+    "schema_chat": {
+      "id": "schema_chat",
+      "name": "Chat Schema",
+      "description": "Standard structure for storing chat context and decisions.",
+      "fields": {
+        "id": "string",
+        "source": "string",
+        "context": "string",
+        "participants": "array",
+        "messages": "array",
+        "tags": "array"
+      }
+    }
+  },
+  "tasks": {
+    "global": [],
+    "by_brand": {
+      "brand_iri_national": [],
+      "brand_iri_productions": [],
+      "brand_luv_media_group": []
+    },
+    "by_project": {
+      "proj_telegram_orchestrator": []
+    }
+  },
+  "files": {
+    "registry": [],
+    "by_brand": {
+      "brand_iri_national": [],
+      "brand_iri_productions": [],
+      "brand_luv_media_group": []
+    },
+    "by_project": {
+      "proj_telegram_orchestrator": []
+    }
+  },
+  "history": {
+    "discussions": [],
+    "decisions": [],
+    "branding_iterations": [],
+    "schema_fragments": [],
+    "notes": "This section can be populated with summarized chats, key decisions, and evolution of the ecosystem over time."
+  }
+}

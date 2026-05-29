@@ -1,0 +1,109 @@
+{
+  "organization": "IRI National",
+  "root_brand_id": "iri-national",
+  "system_environment": {
+    "architecture": "amdx86_64",
+    "target_os": "Windows 11",
+    "development_subsystem": "WSL (Debian)",
+    "shell_preference": "PowerShell-first"
+  },
+  "brands": {
+    "IRI Productions": {
+      "id": "iri-productions",
+      "role": "production_studio",
+      "public_facing": true,
+      "positioning": {
+        "who": "Businesses, creators, and teams needing reliable digital execution",
+        "what": "A production and development studio delivering websites, apps, and systems with precision",
+        "value": "Reliable execution without noise",
+        "statement": "IRI Productions builds and delivers digital products with clarity, stability, and technical confidence."
+      },
+      "tone": {
+        "attributes": [
+          "calm",
+          "technical",
+          "assured",
+          "outcome-driven"
+        ],
+        "dos": [
+          "Use clear and precise language",
+          "Focus on outcomes and reliability",
+          "Maintain a professional tone"
+        ],
+        "donts": [
+          "Avoid hype",
+          "Avoid slang",
+          "Avoid emotional exaggeration"
+        ]
+      },
+      "visuals": {
+        "palette": {
+          "slate_gray": "#4A5568",
+          "technical_silver": "#CBD5E0",
+          "icy_white": "#EDF2F7",
+          "dark_ui": "#111827"
+        },
+        "logo_mark": "IRI Productions standalone mark (Crowned Lion head vector)",
+        "theme_variants": {
+          "dark_mode": {
+            "background": "#111827",
+            "foreground": "#EDF2F7",
+            "accent": "#4A5568"
+          }
+        }
+      }
+    },
+    "Luv Media Group": {
+      "id": "luv-media-group",
+      "role": "sub_brand",
+      "operates_as": "IRI National d/b/a Luv Media Group",
+      "public_facing": true,
+      "positioning": {
+        "who": "Adult content creators, entertainers, media brands",
+        "what": "A creator-first entertainment and media company that amplifies adult creators through storytelling, distribution, and audience development",
+        "value": "Creative freedom with professional structure",
+        "statement": "Luv Media Group empowers adult creators to own their voice, grow their audiences, and distribute content without compromise."
+      },
+      "tone": {
+        "attributes": [
+          "confident",
+          "expressive",
+          "warm",
+          "creator-forward",
+          "modern"
+        ],
+        "dos": [
+          "Speak directly to creators",
+          "Celebrate individuality and ownership",
+          "Use inviting and affirming language"
+        ],
+        "donts": [
+          "Avoid corporate jargon",
+          "Avoid legal or technical heavy language",
+          "Avoid condescension"
+        ]
+      },
+      "visuals": {
+        "palette": {
+          "light_blue": "#A9D6F2",
+          "pink": "#F5B9C8",
+          "warm_white": "#F6F3EE",
+          "dark_ui": "#111827"
+        },
+        "logo_mark": "LUV Media approved monogram and wordmark only"
+      }
+    }
+  },
+  "rules": {
+    "logos": {
+      "sub_brand_may_reference_parent": false
+    },
+    "legal_copy": {
+      "required_format": "IRI National d/b/a {brand_name}"
+    },
+    "domain_routing": {
+      "technical_services": "iri-productions",
+      "media_distribution": "luv-media-group"
+    }
+  }
+}

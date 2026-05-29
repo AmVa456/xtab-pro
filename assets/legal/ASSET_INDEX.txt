@@ -1,0 +1,7 @@
+REQUIRED ASSETS TO DROP IN:
+
+Logos: SVG + PNG (4000, 2048, 1024, 512)
+App Icons: 1024 → 64 PNG
+Favicons: ico, 16, 32, 48 PNG + SVG
+Headers: 1920x600, 1440x480
+Banners: Generic + Launch

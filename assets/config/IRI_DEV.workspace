@@ -1,0 +1,67 @@
+{
+ "id": "{6428fa5d-ce06-429f-aae3-681c89852bd9}",
+ "name": "IRI_DEV",
+ "editable": true,
+ "version": 1,
+ "data": [
+  {
+   "nodeType": "container",
+   "flow": "vertical",
+   "height": 100,
+   "width": 100,
+   "children": [
+    {
+     "nodeType": "panel",
+     "height": 23,
+     "width": 100,
+     "title": "Available networks",
+     "uri": "tools/AvailableNetworks/AvailableNetworks.htm"
+    },
+    {
+     "nodeType": "container",
+     "flow": "horizontal",
+     "height": 43,
+     "width": 100,
+     "children": [
+      {
+       "nodeType": "container",
+       "flow": "vertical",
+       "height": 100,
+       "width": 50,
+       "children": [
+        {
+         "nodeType": "panel",
+         "height": 50,
+         "width": 100,
+         "title": "Registry Reader",
+         "uri": "tools/RegistryEditor/RegistryEditor.htm"
+        },
+        {
+         "nodeType": "panel",
+         "height": 50,
+         "width": 100,
+         "title": "IP configuration",
+         "uri": "tools/IPConfiguration/IPConfiguration.htm"
+        }
+       ]
+      },
+      {
+       "nodeType": "panel",
+       "height": 100,
+       "width": 50,
+       "title": "Change sandbox",
+       "uri": "tools/XboxLiveSandbox/XboxLiveSandbox.htm"
+      }
+     ]
+    },
+    {
+     "nodeType": "panel",
+     "height": 33,
+     "width": 100,
+     "title": "Network performance",
+     "uri": "tools/NetworkPerformance/NetworkPerformance.htm"
+    }
+   ]
+  }
+ ]
+}
